@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vídeo — Edifício Dr. Alberto Drummond</title>
+  <title>Vídeo — Trend</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
@@ -11,20 +11,20 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      /* Edifício Dr. Alberto Drummond — taupe (primária) + branco (secundária) */
-      --bg:            #998A80;   /* taupe — cor primária */
+      /* Trend — verde (primária) + creme (secundária) */
+      --bg:            #45923A;   /* verde — cor primária */
       --dark:          #FFFFFF;   /* texto */
       --border:        rgba(255,255,255,0.26);
       --border-strong: rgba(255,255,255,0.55);
-      --accent:        #FFFFFF;   /* branco — cor secundária */
-      --accent-ink:    #5E5149;
-      --video-bg:      #2E2824;   /* palco do vídeo */
+      --accent:        #E8E4D5;   /* creme — cor secundária */
+      --accent-ink:    #1F4A1A;
+      --video-bg:      #14230F;   /* palco do vídeo */
       --font-serif:    'Montserrat', system-ui, sans-serif;
       --font-sans:     'Montserrat', system-ui, sans-serif;
       --ease:          cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    /* bg.svg: taupe com o monograma "AD" a 10 %, que entra uma vez e fica */
+    /* bg.svg: verde com o monograma "T" a 10 %, que entra uma vez e fica */
     html, body {
       height: 100%;
       overflow: hidden;
@@ -142,7 +142,7 @@
 <div id="vg-root">
   <header id="vg-header">
     <div id="vg-brand">
-      <img id="vg-logo" src="assets/brand/logo.svg" alt="Edifício Dr. Alberto Drummond">
+      <img id="vg-logo" src="assets/brand/logo.svg" alt="Trend">
     </div>
     <button id="btn-close" title="Fechar" aria-label="Fechar">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16">
@@ -153,7 +153,7 @@
 
   <div id="vg-stage">
     <video id="vg-player"
-           src="assets/video/video-alberto-drummond.mp4"
+           src="assets/video/video-trend.mp4"
            autoplay playsinline controls
            preload="auto">
     </video>

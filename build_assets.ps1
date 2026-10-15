@@ -127,22 +127,23 @@ Write-Host "Imagens: $done geradas, $skip ja atualizadas." -ForegroundColor Gree
 # Os SVGs do design vem com as animacoes em `infinite`: o logo se
 # reescreveria a cada 8 s e o monograma do fundo piscaria a cada 2 s.
 # Aqui viram `1 both` — tocam UMA vez e congelam no quadro final (todos os
-# keyframes de 100% terminam com opacity 1). Com prefers-reduced-motion a
-# animacao e desligada e o SVG mostra direto o estado final.
+# keyframes de 100% terminam com opacity 1). ATENCAO: no logo do Trend o
+# estado-base (sem animacao) fica desmontado — por isso o reduced-motion NAO
+# desliga a animacao, so a reduz a ~0 ms (pula direto para o quadro final).
 if ($Brand) {
   New-Item -ItemType Directory -Force -Path 'assets/brand' | Out-Null
   $once    = '(\d+(?:\.\d+)?s linear) infinite'
-  $reduced = '@media (prefers-reduced-motion: reduce) { * { animation: none !important; } }'
+  $reduced = '@media (prefers-reduced-motion: reduce) { * { animation-duration: 0.001ms !important; animation-delay: 0s !important; } }'
   $utf8    = New-Object System.Text.UTF8Encoding($false)
 
-  $logo = [IO.File]::ReadAllText("$Src/design/logo-dr-alberto-drummond.svg")
+  $logo = [IO.File]::ReadAllText("$Src/design/logo-trend.svg")
   $logo = [regex]::Replace($logo, $once, '$1 1 both')
   # o quadro de 600 x 600 tem muita sobra em volta: o viewBox encosta no desenho
-  $logo = $logo.Replace('width="600" height="600" viewBox="0 0 600 600"', 'width="496" height="476" viewBox="54 61 496 476"')
+  $logo = $logo.Replace('width="600" height="600" viewBox="0 0 600 600"', 'width="555" height="437" viewBox="23 82 555 437"')
   $logo = $logo.Replace('</style>', "$reduced`n</style>")
   [IO.File]::WriteAllText("$PSScriptRoot/assets/brand/logo.svg", $logo, $utf8)
 
-  $bg = [IO.File]::ReadAllText("$Src/design/bg-sessao-alberto.svg")
+  $bg = [IO.File]::ReadAllText("$Src/design/bg-trend.svg")
   $bg = [regex]::Replace($bg, $once, '$1 1 both')
   $bg = $bg.Replace('</style>', "$reduced`n</style>")
   [IO.File]::WriteAllText("$PSScriptRoot/assets/brand/bg.svg", $bg, $utf8)
@@ -150,14 +151,13 @@ if ($Brand) {
 }
 
 # ── VIDEO ──────────────────────────────────────────────────────────
-# 4K a 54 Mbit/s (~267 MB) -> 1080p H.264 com faststart (comeca a tocar
-# antes de terminar o download). O filme e cinemascope com TARJAS PRETAS
-# gravadas no arquivo (1920 x 816 util a partir de y=132, medido com
-# cropdetect no video inteiro): o crop tira as tarjas e o player usa a
-# proporcao real. Se o video for trocado, meca de novo.
+# 4K -> 1080p H.264 com faststart (comeca a tocar antes de terminar o
+# download). AINDA SEM VIDEO DO TREND: o crop (1920 x 816 a partir de y=132)
+# veio do filme do Alberto Drummond — medir de novo com cropdetect quando o
+# video chegar e ajustar o aspect-ratio em video-gallery.html.
 if ($Video) {
-  $vin  = "$Src/video/ALBERTO DRUMOND_v5 (1).mp4"
-  $vout = 'assets/video/video-alberto-drummond.mp4'
+  $vin  = "$Src/video/TREND.mp4"
+  $vout = 'assets/video/video-trend.mp4'
   Ensure-Dir $vout
   & ffmpeg -v error -y -i $vin -vf "scale=1920:-2:flags=lanczos,crop=1920:816:0:132" -c:v libx264 -preset slow -crf 21 `
       -profile:v high -pix_fmt yuv420p -movflags +faststart -c:a aac -b:a 160k $vout

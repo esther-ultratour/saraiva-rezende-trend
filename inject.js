@@ -1,11 +1,11 @@
 (function (w, d) {
   'use strict';
 
-  var BASE = 'https://skylineip.s3.sa-east-1.amazonaws.com/Tour+Virtual/saraiva-rezende/alberto-drummond/ferramentas/';
+  var BASE = 'https://skylineip.s3.sa-east-1.amazonaws.com/Tour+Virtual/saraiva-rezende/trend/ferramentas/';
   var GALLERY_URL       = BASE + 'index.html';
   var VIDEO_GALLERY_URL = BASE + 'video-gallery.html';
 
-  var BG = '#998A80';   // taupe do empreendimento — aparece enquanto o iframe carrega
+  var BG = '#45923A';   // verde do empreendimento — aparece enquanto o iframe carrega
 
   var overlay    = null;
   var msgHandler = null;
