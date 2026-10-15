@@ -1,0 +1,116 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+<style>
+@keyframes kf_d_transform_0 {
+  0% {
+    transform: translateX(849.744px) translateY(0px) translateX(92.277px) translateY(-51.265px) translate(463.128px, 560.888px) rotate(-0.038rad) scaleX(0.94) scaleY(0.94) translate(-463.128px, -560.888px);
+  }
+  29.95% {
+    animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+    transform: translateX(849.744px) translateY(0px) translateX(92.277px) translateY(-51.265px) translate(463.128px, 560.888px) rotate(-0.038rad) scaleX(0.94) scaleY(0.94) translate(-463.128px, -560.888px);
+  }
+  84.59% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(849.744px) translateY(0px) translateX(-7.382px) translateY(5.126px) translate(463.128px, 560.888px) rotate(0.003rad) scaleX(1.012) scaleY(1.012) translate(-463.128px, -560.888px);
+  }
+  100% {
+    transform: translateX(849.744px) translateY(0px) translateX(0px) translateY(0px) translate(463.128px, 560.888px) rotate(0rad) scaleX(1) scaleY(1) translate(-463.128px, -560.888px);
+  }
+}
+@keyframes kf_d_opacity_0 {
+  0% {
+    animation-timing-function: linear;
+    opacity: 0;
+  }
+  29.95% {
+    animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+    opacity: 0;
+  }
+  84.59% {
+    animation-timing-function: linear;
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#d {
+  transform-origin: 0 0;
+  animation:
+    kf_d_transform_0 2s linear 1 both,
+    kf_d_opacity_0 2s linear 1 both;
+}
+@keyframes kf_a_transform_0 {
+  0% {
+    transform: translateY(0px) translateX(-92.277px) translateY(51.265px) translate(674.783px, 563.394px) rotate(0.038rad) scaleX(0.94) scaleY(0.94) translate(-674.783px, -563.394px);
+  }
+  7.5% {
+    animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+    transform: translateY(0px) translateX(-92.277px) translateY(51.265px) translate(674.783px, 563.394px) rotate(0.038rad) scaleX(0.94) scaleY(0.94) translate(-674.783px, -563.394px);
+  }
+  64.05% {
+    animation-timing-function: ease-in-out;
+    transform: translateY(0px) translateX(7.382px) translateY(-5.126px) translate(674.783px, 563.394px) rotate(-0.003rad) scaleX(1.012) scaleY(1.012) translate(-674.783px, -563.394px);
+  }
+  80% {
+    transform: translateY(0px) translateX(0px) translateY(0px) translate(674.783px, 563.394px) rotate(0rad) scaleX(1) scaleY(1) translate(-674.783px, -563.394px);
+  }
+  100% {
+    transform: translateY(0px) translateX(0px) translateY(0px) translate(674.783px, 563.394px) rotate(0rad) scaleX(1) scaleY(1) translate(-674.783px, -563.394px);
+  }
+}
+@keyframes kf_a_opacity_0 {
+  0% {
+    animation-timing-function: linear;
+    opacity: 0;
+  }
+  7.5% {
+    animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+    opacity: 0;
+  }
+  64.05% {
+    animation-timing-function: linear;
+    opacity: 1;
+  }
+  80% {
+    animation-timing-function: linear;
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#a {
+  transform-origin: 0 0;
+  animation:
+    kf_a_transform_0 2s linear 1 both,
+    kf_a_opacity_0 2s linear 1 both;
+}
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+</style>
+<g id="bg-sessao-alberto" clip-path="url(#clip0_1571_22207)">
+<rect width="1920" height="1080" id="bg-sessao-alberto_bg_0" fill="white">
+</rect>
+<rect id="bg" width="1920" height="1080" fill="#998A80"/>
+<g id="graf-dr-alberto-drummond" opacity="0.1" transform="translate(218 -23.4955)">
+<g id="grafismo" transform="translate(0 -0.000445879)">
+<g id="d" transform="translate(849.744 -0.000407625)">
+<path d="M410.08 1110.98H323.564C356.684 1116.42 438.306 1125.82 499.824 1119.88C1091.9 1025.68 1072.39 0.0444988 410.211 0.0444988V0H0C76.0731 0 101.854 65.1588 101.854 137.766L101.55 563.394L223.676 845.852V19.8622H410.08L412.945 19.8753C899.817 24.295 943.821 1110.98 410.08 1110.98Z" id="d_bg_0" fill="white">
+</path>
+<path d="M410.08 1110.98H323.564C356.684 1116.42 438.306 1125.82 499.824 1119.88C1091.9 1025.68 1072.39 0.0444988 410.211 0.0444988V0H0C76.0731 0 101.854 65.1588 101.854 137.766L101.55 563.394L223.676 845.852V19.8622H410.08L412.945 19.8753C899.817 24.295 943.821 1110.98 410.08 1110.98Z" id="d_bg_1" fill="black">
+</path>
+</g>
+<g id="a" transform="translate(0 -0.000445879)">
+<path d="M973.399 970.901L592.64 0H415.761C465.312 0 511.803 70.0374 496.903 112.417L193.31 994.028C160.931 1074.61 82.7151 1126.79 0 1126.79H327.541C247.928 1126.79 181.511 1079.83 209.431 994.203L289.831 766.058H638.868L633.058 750.596H292.759L510.012 118.733L731.677 684.392L732.159 685.609L756.54 750.596L775.548 801.076L853.764 995.423C894.715 1129.11 1172.82 1126.79 1173.31 1126.79H1259.82C1291.15 1126.79 1321.07 1124.41 1349.57 1119.88C1288.05 1125.82 1206.43 1116.42 1173.31 1110.98C1113.53 1110.98 1056.42 1085.23 1017.71 1039.81C998.917 1017.77 983.624 993.855 973.399 970.901Z" id="a_bg_0" fill="white">
+</path>
+<path d="M973.399 970.901L592.64 0H415.761C465.312 0 511.803 70.0374 496.903 112.417L193.31 994.028C160.931 1074.61 82.7151 1126.79 0 1126.79H327.541C247.928 1126.79 181.511 1079.83 209.431 994.203L289.831 766.058H638.868L633.058 750.596H292.759L510.012 118.733L731.677 684.392L732.159 685.609L756.54 750.596L775.548 801.076L853.764 995.423C894.715 1129.11 1172.82 1126.79 1173.31 1126.79H1259.82C1291.15 1126.79 1321.07 1124.41 1349.57 1119.88C1288.05 1125.82 1206.43 1116.42 1173.31 1110.98C1113.53 1110.98 1056.42 1085.23 1017.71 1039.81C998.917 1017.77 983.624 993.855 973.399 970.901Z" id="a_bg_1" fill="black">
+</path>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_1571_22207">
+<rect width="1920" height="1080" fill="white"/>
+</clipPath>
+</defs>
+</svg>
